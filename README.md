@@ -12,9 +12,6 @@
 
   The dataset has 36.6k rows containing next columns: content (string),	title (string),	grade3 (string),	movie_name (string),	part (string),	review_id (string),	author (string),	date (string),	grade10 (string),	Idx (int32). (<a href="https://huggingface.co/datasets/blinoff/kinopoisk"> source </a>)
 
-  Sentiment Analysis of IMDb Movie datasets is done using two different machine learning algorithm:
-    1) Logistic Regression
-    2) Linear Support Vector Classifier (LinearSVC)
-  Precision score for LR is 0.8187441407395805 and 0.8139459980739157 for LinearSVC. Such negligible difference can be explained by the fact that, when exclusively using binary features with a binary outcome predictor, a LR model without regularisation and SVC with linear kernel are exactly the same.  (<a href="https://towardsdatascience.com/support-vector-classifiers-and-logistic-regression-similarity-97ff06aa6ec3]"> source </a>)
+    Sentiment Analysis is done using Logistic Regression algorithm with all reviews being classified as "Good", "Neutral" or "Bad". Precision score for this model is 0.8187441407395805.
 
 
